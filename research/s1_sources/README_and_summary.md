@@ -19,6 +19,8 @@ The background agent discovered that eParlib's entire 387,743-item corpus — in
 
 3. **NEW — a likely date error in the essay's existing framing of the RBI Act reserve-backing change.** The Rs 200cr/Rs115cr minimum-reserve floor was fixed by **Act 48 of 1957 (w.e.f. 31 October 1957)**, not by an October 1956 amendment as commonly stated (including, apparently, in this project's own working assumption). Act 38 of 1956 (6 Oct 1956) amended *different* provisions (the Bank's business/exchange-operations clause, the foreign-securities-suspension mechanism, and scheduled-bank CRR). This may actually *strengthen* the "no remaining options" argument (the floor was fixed the same year as the crisis, not the year before) but the essay's date needs fixing either way. Detail in `T1.7_RBI_Act_1956_amendment.md`.
 
+4. **NEW — the No. 2 Account's June 1957 expiry was an amicable, mutually-agreed technical wind-down, not a dramatic release of blocked money.** RBI's own institutional history describes it as scheduled since the 1949–51 agreement, explicitly tied to India's *own* new currency-reserve provisions making the mechanism redundant, ending with a press release affirming India's "right to draw upon its sterling balances." If the essay's counterfactual (G1) imagined a large blocked sum becoming available right when needed, that framing is not well supported — the essay should either find an actual residual-balance figure (RBI *Report on Currency and Finance*, not yet fetched) or reframe the counterfactual. Detail in `T2.1_No2_Account_June1957.md`.
+
 ## Status table
 
 | ID | Status | Confidence | Changes the essay? | Blocking anything? |
@@ -27,14 +29,18 @@ The background agent discovered that eParlib's entire 387,743-item corpus — in
 | T0.2 World-normalisation timeline | FOUND | STATED (1955, via Hansard) / CONVERGENT (1958 Treasury statement, EPU dissolution) | Yes — pins "Feb 1955" to 24 Feb 1955, with column reference. | No |
 | T0.3 Sterling-area comparators | PARTIAL | CONVERGENT (all cells) | Yes — literal KILL CONDITION does not fire; NZ/South Africa bonus comparators undercut the outlier framing if added. | Judgment call flagged, not resolved. |
 | T1.1 Cripps memorandum, April 1949 | FOUND | STATED (file-level TNA:T236/4412 via Abreu) | Yes — converts §4.5's causal joint from hearsay to a sourced archival reference. | No |
-| T1.2 Matthai June 1949 revocation | NOT FOUND | — | No progress. | Still open — T1.3's CAD sweep did not happen to cover this specific event either; needs a dedicated search. |
+| T1.2 Matthai June 1949 revocation | PARTIAL | CONVERGENT (RBI's own institutional history, directly fetched) | Yes — now precisely dated and scoped ("revoked all Open General Licences for soft currency imports," not a vague "dollar import licence"), and closes the causal chain from T1.1's Cripps memorandum through to the August 1949 settlement. | Matthai's own words (vs. the RBI historian's account of him) still not located. |
 | T1.3 Legislative sterling sweep | **FOUND — biggest find in the project.** See 🏆 above. | STATED | **Yes, in two directions at once.** | Outstanding: CAD 6 Oct 1949 (indexed, won't resolve on IA), Rajya Sabha 6 Sept 1957 text, 1948 budget session (dark on mirror), the White Paper on Sterling Balances Negotiations itself. |
 | T1.4 1957 IMF drawings from the Fund's side | PARTIAL | STATED (drawings figures, independently corroborated via FRUS) / OPEN (British-engineering claim) | **Yes — flagged condition 2.** | Needs published Avaro (2024) or BoE Archive OV-series to resolve. |
 | T1.5 Import Trade Control Handbook / FERA double-gate | PARTIAL | OPEN | No — the brief's suggested cross-check case (*East India Commercial Co.*) was read in full and does **not** address this question; eliminated as a lead. | Genuine open question, unresolved either direction. |
 | T1.6 Schenk/Kennedy secondary literature | FOUND (citations) | STATED (citations) / OPEN (Newton full text, paywalled) | Yes — also produced a second independent citation into T2.10's restricted Symons memo (see below). | Milward/Tomlinson not yet searched. |
 | T1.7 RBI Act 1956 currency-backing amendment | FOUND | STATED | **Yes — flagged condition 3.** | No |
-| T2.10 Symons 1972 TNA memorandum | **PARTIAL — mostly closed as a side-effect of T1.6.** | CONVERGENT (two independent scholarly citations, pp.78 and pp.96-8) | Yes — directly supports the essay's causal claim: "India's experience with blocking led to its subsequent diversification." | Only a verbatim Symons quotation (vs. paraphrase) remains open. |
-| T2.1–T2.10 | NOT ATTEMPTED | — | — | Tier 2 not started. |
+| T2.1 No. 2 Account balance, 30 June 1957 | FOUND (date), but complicates the counterfactual | STATED | **Yes — see flagged condition 4 below.** | Actual residual-balance figure still needs RBI *Report on Currency and Finance*. |
+| T2.2 Government optimism 1955-56 | NOT ATTEMPTED | -- | -- | -- |
+| T2.3 Amendments negatived on 1957 Bill | FOUND (negative result) | STATED | Yes -- no date-substitution amendment was ever moved; Clause 1 passed silently, unamended. | No |
+| T2.4 Enforcement Unit establishment date | FOUND | STATED | Yes -- pins 1 May 1956, from the Directorate's own history page. | No |
+| T2.5-T2.9 | NOT ATTEMPTED | -- | -- | Tier 2 mostly untouched. |
+| T2.10 Symons 1972 TNA memorandum | **PARTIAL -- mostly closed as a side-effect of T1.6.** | CONVERGENT (two independent scholarly citations, pp.78 and pp.96-8) | Yes -- directly supports the essay's causal claim: "India's experience with blocking led to its subsequent diversification." | Only a verbatim Symons quotation (vs. paraphrase) remains open. |
 
 ## What still isn't reachable without a real browser
 
