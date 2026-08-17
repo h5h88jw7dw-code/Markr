@@ -1,6 +1,15 @@
-# S1 Source Hunt — Run Summary (Pass 2)
+# S1 Source Hunt — Run Summary (Pass 3)
 
-Run date: 2026-08-17. Tooling used: WebSearch (Anthropic-hosted), Firecrawl (`firecrawl_search`, `firecrawl_scrape`, `firecrawl_agent`). Direct `WebFetch` to external domains (cambridge.org, parliament.uk, imf.org, history.state.gov, etc.) is blocked by this session's network egress policy — Firecrawl routed around this successfully in every case it was tried. A separate background agent (Opus) is running in parallel on T1.3 (eparlib/Sansad/rsdebate legislative sweep) with Firecrawl access and Internet-Archive-fallback instructions; its output is not yet in this summary and will land as its own file when it reports back.
+Run date: 2026-08-17. Tooling used: WebSearch (Anthropic-hosted), Firecrawl (`firecrawl_search`, `firecrawl_scrape`, `firecrawl_agent`). Direct `WebFetch` to external domains (cambridge.org, parliament.uk, imf.org, history.state.gov, etc.) is blocked by this session's network egress policy — Firecrawl routed around this successfully in every case it was tried. A background agent (Opus) completed T1.3 (eparlib/Sansad/rsdebate legislative sweep) and its full write-up is now folded in — see `T1.3_legislative_sterling_sweep.md`, the single richest file in this project.
+
+## 🏆 T1.3 IS THE BIGGEST FIND OF THE PROJECT SO FAR
+
+The background agent discovered that eParlib's entire 387,743-item corpus — including all 169 Constituent Assembly (Legislative) sitting-day volumes, 1947–49 — is mirrored on the Internet Archive, unlocking the pre-1952 corpus that had never been searched. Headlines:
+
+- **A named two-day debate nobody had found**: "Failure of Government to secure Protection against scaling down of Sterling Balances" (12–13 Aug 1948), plus two Starred Questions with ministerial answers, plus a rich 5 Oct 1949 devaluation debate. The opposition-side sterling-pressure claim **no longer rests on Bhupesh Gupta alone** — Finance Ministers Chetty (1948) and Matthai (1949, 1950) said it themselves, on the floor: *"beginning from January 1948 the United Kingdom refused to carry this responsibility any further and insisted on limiting the convertibility of our sterling very rigidly… these limits bear no relation whatever to our needs."*
+- **But a major negative finding for the 1957 causal claim**: TTK's own 31 August 1957 motion and speech — read in full — contains **zero occurrences of "Britain"** and gives permanence's rationale as (i) world trade never stabilised, (ii) "the shortage of foreign exchange is likely to continue ad infinitum," (iii) the Five Year Plan. The essay must treat "Britain constrained India, 1948–50" and "Britain caused 1957 permanence" as two separate claims — the second does not currently have 1957-record support and cannot free-ride on the first.
+- Bhupesh Gupta's Rajya Sabha speech is now precisely citable (Vol. 18, 6 Sept 1957, pp. 3928–3954) even though the text itself remains unreachable (rsdebate.nic.in migrated to sansad.in; Wayback was down during the run).
+- A reusable method for the whole pre-1952 corpus is documented in the file's "Reusable method" section — this is a durable unlock for any future pass, not a one-off.
 
 ## ⚠️ FLAGGED CONDITIONS — READ FIRST
 
@@ -18,12 +27,13 @@ Run date: 2026-08-17. Tooling used: WebSearch (Anthropic-hosted), Firecrawl (`fi
 | T0.2 World-normalisation timeline | FOUND | STATED (1955, via Hansard) / CONVERGENT (1958 Treasury statement, EPU dissolution) | Yes — pins "Feb 1955" to 24 Feb 1955, with column reference. | No |
 | T0.3 Sterling-area comparators | PARTIAL | CONVERGENT (all cells) | Yes — literal KILL CONDITION does not fire; NZ/South Africa bonus comparators undercut the outlier framing if added. | Judgment call flagged, not resolved. |
 | T1.1 Cripps memorandum, April 1949 | FOUND | STATED (file-level TNA:T236/4412 via Abreu) | Yes — converts §4.5's causal joint from hearsay to a sourced archival reference. | No |
-| T1.2 Matthai June 1949 revocation | NOT FOUND | — | No progress. | Still open — check T1.3 agent's Constituent Assembly output first. |
-| T1.3 Legislative sterling sweep | **IN PROGRESS** (background agent) | — | Potentially the biggest single upgrade in Tier 1, per the brief. | Result pending. |
+| T1.2 Matthai June 1949 revocation | NOT FOUND | — | No progress. | Still open — T1.3's CAD sweep did not happen to cover this specific event either; needs a dedicated search. |
+| T1.3 Legislative sterling sweep | **FOUND — biggest find in the project.** See 🏆 above. | STATED | **Yes, in two directions at once.** | Outstanding: CAD 6 Oct 1949 (indexed, won't resolve on IA), Rajya Sabha 6 Sept 1957 text, 1948 budget session (dark on mirror), the White Paper on Sterling Balances Negotiations itself. |
 | T1.4 1957 IMF drawings from the Fund's side | PARTIAL | STATED (drawings figures, independently corroborated via FRUS) / OPEN (British-engineering claim) | **Yes — flagged condition 2.** | Needs published Avaro (2024) or BoE Archive OV-series to resolve. |
 | T1.5 Import Trade Control Handbook / FERA double-gate | PARTIAL | OPEN | No — the brief's suggested cross-check case (*East India Commercial Co.*) was read in full and does **not** address this question; eliminated as a lead. | Genuine open question, unresolved either direction. |
-| T1.6 Schenk/Kennedy secondary literature | NOT ATTEMPTED | — | — | — |
+| T1.6 Schenk/Kennedy secondary literature | FOUND (citations) | STATED (citations) / OPEN (Newton full text, paywalled) | Yes — also produced a second independent citation into T2.10's restricted Symons memo (see below). | Milward/Tomlinson not yet searched. |
 | T1.7 RBI Act 1956 currency-backing amendment | FOUND | STATED | **Yes — flagged condition 3.** | No |
+| T2.10 Symons 1972 TNA memorandum | **PARTIAL — mostly closed as a side-effect of T1.6.** | CONVERGENT (two independent scholarly citations, pp.78 and pp.96-8) | Yes — directly supports the essay's causal claim: "India's experience with blocking led to its subsequent diversification." | Only a verbatim Symons quotation (vs. paraphrase) remains open. |
 | T2.1–T2.10 | NOT ATTEMPTED | — | — | Tier 2 not started. |
 
 ## What still isn't reachable without a real browser
