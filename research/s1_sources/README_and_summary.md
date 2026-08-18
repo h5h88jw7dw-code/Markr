@@ -1,4 +1,8 @@
-# S1 Source Hunt — Run Summary (Pass 3)
+# S1 Source Hunt — Run Summary (Pass 4)
+
+**Pass 4 note:** worked against a much larger consolidated "Master Search Target List" spanning several unrelated candidate essays (China silver reform, Bombay 1865, Pakistan devaluation, Egypt precedent, Pittman Act, 1869 transport shock, Golden Gimmick, Iraq Development Board, Cabinda, Alexandria vs Cairo, soybean embargo, Aswan/cotton). This project has only ever built context on the **India/AD INFINITUM** essay (that list's Parts 2–3) — Parts 4–5 (other candidates) were left untouched rather than guessed at blind. Pass 4 results below are additions to the existing India-project findings, not a fresh start.
+
+New this pass: B2 (Gazette SOR) — not found, genuine dead end without corpus-wide full-text search. H4/H4b (Rajya Sabha via Wayback) — confirmed dead end, not transient (Wayback has *never* crawled `rsdebate.nic.in`). H1 (IMF TOC) — not resolved. H5 (White Paper) — not found, but a strong adjacent primary source surfaced (Bank of England's own unpublished WWII history chapter, "India's Sterling Balances"). H8 (1951 agreement text) — largely already covered by the existing T2.1 finding; one adjacent paper fetched didn't add to it. See `B2_Gazette_26Jul1957_SOR.md`, `H4_H4b_Rajya_Sabha_Wayback_retry.md`, `H1_H5_H8_status.md`.
 
 Run date: 2026-08-17. Tooling used: WebSearch (Anthropic-hosted), Firecrawl (`firecrawl_search`, `firecrawl_scrape`, `firecrawl_agent`). Direct `WebFetch` to external domains (cambridge.org, parliament.uk, imf.org, history.state.gov, etc.) is blocked by this session's network egress policy — Firecrawl routed around this successfully in every case it was tried. A background agent (Opus) completed T1.3 (eparlib/Sansad/rsdebate legislative sweep) and its full write-up is now folded in — see `T1.3_legislative_sterling_sweep.md`, the single richest file in this project.
 
