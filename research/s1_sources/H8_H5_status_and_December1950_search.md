@@ -40,8 +40,19 @@ Other untried routes for H5: the `gazetteofindia` collection description field f
 
 ---
 
-## Note on tooling
+## Note on tooling (updated — second Firecrawl connector session)
 
-**Firecrawl credits were exhausted during this pass.** The largest single consumer was the IMF *Eighth Annual Report on Exchange Restrictions* PDF: one successful 172-page parse cost 172 credits, and several further attempts at 178–192 pages timed out (see `H1_IMF_exchange_restrictions.md`). Retrieval of large PDFs by `maxPages` is expensive and should be budgeted deliberately — prefer, in order: (1) a clean official text if one exists (e.g. `indiabudget.gov.in` for Budget speeches, which is free of both OCR error and credit cost per page), (2) the Internet Archive `cors` route for `_djvu.txt` derivatives at 1 credit each, (3) page-limited PDF parsing only as a last resort.
+A second Firecrawl connector was added mid-project with a separately-funded credit pool. Tested against the live connector landscape at the time:
+
+- **`firecrawl_scrape`** (the tool that actually fetches a known page's content) — returns "Insufficient credits" consistently, including after the MCP server was fully disconnected and reconnected twice. This is the tool every finding in this project has depended on for archive.org `_djvu.txt` and Gazette-item retrieval, and for `indiabudget.gov.in` PDF parsing. **It is not currently usable.**
+- **`firecrawl_search`** — has working credits (confirmed: a test call succeeded and was billed 2–3 credits), but it is a web-search tool, not a URL-fetch proxy. Pointing it directly at a known target URL (tested: the 1 Dec 1950 Provisional Parliament debate's `_djvu.txt` address) does not fetch that page — it returns generic top search results for the string (in the test, archive.org's homepage). **This tool cannot substitute for `firecrawl_scrape` on this project's targets**, which are specific already-identified pages, not open-ended searches.
+- **`firecrawl_agent`** (the async research tool) — independently failed with "the scraping service token appears to be invalid or expired," a different failure mode from the credits error, suggesting the underlying scrape backend itself (not just this account's credit balance) is not currently reachable from this environment.
+- **`WebFetch`** — confirmed blocked by this session's egress proxy for `archive.org` (tested repeatedly across the whole project) and now also confirmed blocked for `www.indiabudget.gov.in` — i.e. this is a general block on external fetches from this session, not a domain-specific one.
+
+**Net effect: none of the remaining open targets (H1's India chapter, H5, the 12 untested December 1950 sittings) can be advanced with the tools currently reachable from this session.** This is a tooling outage, not a research dead end — every route documented earlier in this file and in `H1_IMF_exchange_restrictions.md` remains valid and should work again once `firecrawl_scrape` has credits or a working backend.
+
+---
+
+**Firecrawl credits were exhausted during this pass (original note, first session).** The largest single consumer was the IMF *Eighth Annual Report on Exchange Restrictions* PDF: one successful 172-page parse cost 172 credits, and several further attempts at 178–192 pages timed out (see `H1_IMF_exchange_restrictions.md`). Retrieval of large PDFs by `maxPages` is expensive and should be budgeted deliberately — prefer, in order: (1) a clean official text if one exists (e.g. `indiabudget.gov.in` for Budget speeches, which is free of both OCR error and credit cost per page), (2) the Internet Archive `cors` route for `_djvu.txt` derivatives at 1 credit each, (3) page-limited PDF parsing only as a last resort.
 
 WebSearch (a separate, non-Firecrawl tool) remained available and is unaffected.
