@@ -1,3 +1,45 @@
+# S1 Source Hunt — Run Summary (Pass 5, Opus)
+
+## PASS 5 HEADLINE: the Gazette collection was cracked, and B2 — the project's #1 target — is FOUND.
+
+**The key.** Internet Archive's `gazetteofindia` items carry `date` and `description` metadata fields. Identifier numbering is *not* date-sequential (which defeated every earlier pass), but the metadata is directly queryable:
+```
+archive.org/advancedsearch.php?q=collection:gazetteofindia AND description:"Foreign Exchange Regulation"
+  &fl[]=identifier&fl[]=date&fl[]=description&rows=60&output=json
+```
+The same technique works on the eParlib mirror, where `fl[]=eparlib_document_url` returns the exact bitstream filename — which also proves that several items earlier logged as "indexed but will not resolve" (the 6 Oct 1949 volume; the whole Feb–Mar 1948 session) are in fact available; those were transient failures.
+
+### What Pass 5 recovered
+
+| Target | Result |
+|---|---|
+| **B2** — Statement of Objects and Reasons, FERA (Amendment) Bill 1957 | **FOUND.** `in.gazette.e.1957.284` = Bill No. 47 of 1957, introduced 26 July 1957, SOR signed **T. T. Krishnamachari, 13 July 1957**. Reasons given: world trade did not stabilise; shortage "likely to continue for an indefinite period"; the Second Five Year Plan. **No mention of Britain, sterling, or the sterling balances.** Its Financial Memorandum also independently corroborates T2.4 ("An Enforcement Unit with a Director at its head is already functioning"). Printed pages are **323–334**, not "1323–34" as the master list recorded. |
+| **T1.7** — RBI currency-reserve change | **RESOLVED, and the earlier finding CORRECTED.** Act 38 of 1956 *did* amend s.33(2): Deshmukh's SOR replaces the proportional ratio with absolute minimums (Rs 400cr foreign securities + Rs 115cr gold) expressly to accommodate the Second Plan. India breached even that within 12 months, forcing **Presidential Ordinance No. 6 of 1957 on 31 October 1957** ("Parliament is not in session… immediate action"), which cut the floor to Rs 200cr and deleted the Rs 300cr backstop. TTK's replacement Bill concedes the Bank "cannot comply". |
+| **H7** — the 1957 reserve position | **FOUND, and it closes the loop numerically.** TTK, May 1957: reserves "a little below Rs.500 crores", falling "Rs.5 to 6 crores a week", against a Rs.400cr floor → 17–20 weeks to breach. The Ordinance came at week ~22. |
+| **B1/B3** — OCR numeral verification | **DONE, and it caught two live errors.** Against the Government's own text at `indiabudget.gov.in`, the UK convertibility limit for Jul 1948–Jun 1949 is **£15m/$60m** (OCR reconstruction said £25m/$100m) and the Apr–Sep 1948 hard-currency deficit is **$45m** (OCR said $145m). Both would have overstated the case in print. |
+| **T2.2** — government optimism 1955–56 | **FOUND.** Feb 1956 (Deshmukh): payments *surplus*, sterling balances *rising*, IMF liability nearly repaid, dollar imports being *liberalised*, India a net *contributor* of $53m to the sterling area's central reserve. Eighteen months to "ad infinitum". |
+| **U10 / Act I** — the 1948 Budget speech | **FOUND.** Chetty, Feb 1948, on losing full convertibility of Account No. 1: the £10m limit was "**forced upon us**", "very undesirable and harmful"; India had honoured its sterling pledge "**perhaps even beyond the bounds of prudence**". Cross-confirms Matthai's £10m figure. |
+| **H6** — CAD 6 Oct 1949, devaluation day 2 | **FOUND** (previous "does not resolve" was transient). Yields a *second* minister — Neogy — stating import policy was bounded by permitted sterling drawings. |
+| **H1** — IMF Exchange Restrictions 1957 | **PARTIAL.** Part I + full TOC recovered: **49 countries under Article XIV vs 11 under Article VIII**, India among the 49 — settles T0.1's count from the primary source. The India chapter (printed pp.164–170 ≈ PDF 181–188) is ~10 pages beyond the reachable parse ceiling. |
+| **H8, H5** | Still open. Four Dec-1950 sittings eliminated for H8; H5 not found. See `H8_H5_status_and_December1950_search.md`. |
+
+### The negative finding has hardened considerably
+
+**"Sterling" appears zero times** in TTK's Interim Budget speech (Mar 1957), zero times in his final Budget speech (May 1957), zero times in the FERA Bill's Statement of Objects and Reasons (Jul 1957), and "Britain" zero times in the 31 August 1957 Lok Sabha debate. **Four independent 1957 documents by the same minister, none mentioning sterling or Britain.** Meanwhile the sterling constraint is stated explicitly and repeatedly by ministers across 1948–50 (Chetty Feb 1948 and Aug 1948; Matthai Feb 1949 and Oct 1949; Neogy Oct 1949).
+
+The essay must treat these as two separate claims. "Britain constrained India, 1948–50" is now very strongly evidenced from primary sources. "Britain caused the 1957 permanence" is not evidenced in any 1957 government document recovered, and the Government's own stated cause throughout is the Second Five Year Plan's import surge.
+
+### Two durable routes established
+
+1. **`indiabudget.gov.in/doc/bspeech/bs<YYYYYY>.pdf`** — every Union Budget speech back to 1947 in clean official text. Free of OCR error. Supersedes scans for all Budget-speech quotation.
+2. **IA metadata queries** (`date`, `description`, `eparlib_document_url` fields) — the way into both the Gazette and eParlib collections.
+
+### Tooling note
+
+**Firecrawl credits were exhausted at the end of this pass.** The IMF PDF was the main consumer (172 credits for one successful parse; further attempts timed out). Budget large-PDF fetches deliberately; prefer official texts, then IA `cors` `_djvu.txt` at 1 credit. WebSearch is a separate tool and unaffected.
+
+---
+
 # S1 Source Hunt — Run Summary (Pass 4)
 
 **Pass 4 note:** worked against a much larger consolidated "Master Search Target List" spanning several unrelated candidate essays (China silver reform, Bombay 1865, Pakistan devaluation, Egypt precedent, Pittman Act, 1869 transport shock, Golden Gimmick, Iraq Development Board, Cabinda, Alexandria vs Cairo, soybean embargo, Aswan/cotton). This project has only ever built context on the **India/AD INFINITUM** essay (that list's Parts 2–3) — Parts 4–5 (other candidates) were left untouched rather than guessed at blind. Pass 4 results below are additions to the existing India-project findings, not a fresh start.
