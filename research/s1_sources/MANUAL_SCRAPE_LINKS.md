@@ -168,3 +168,60 @@ So you don't waste scrapes: **31 documents are captured in full** in `primary_do
 | `firecrawl_search` | 2–3 each | |
 
 **Cost discipline, in order of preference:** (1) official clean text if it exists (indiabudget.gov.in — free of both OCR error and per-page cost); (2) IA `/cors/` `_djvu.txt` at 1 credit; (3) page-limited PDF parsing only as a last resort.
+
+---
+
+## ADDENDUM (second pass, different session) — the "Still outstanding" list from a parallel local research pass
+
+A separate context file (from a local Mac session using different tooling — `elibrary.sansad.in`,
+`indiacode.nic.in`, local OCR) listed further outstanding targets. This session's Firecrawl
+connector ran out of credits partway through chasing them (HTTP 402). Two were found and saved in
+full before that; the rest have exact next-step URLs below.
+
+### Found this pass
+
+- **Ordinance X of 1951** (The Foreign Exchange Regulation (Amendment) Ordinance, 1951) — **FOUND,
+  full text, clean OCR.** `primary_docs/GAZETTE_1951-12-27_FERA_Ordinance_X_of_1951_FULLTEXT.md`.
+  Promulgated by President Rajendra Prasad under Article 123(1), 27 December 1951. A substantial
+  enforcement tightening: reverse burden of proof (s.24), a document-presumption clause (s.24A),
+  an attempts offence (s.23B), and application of the Sea Customs Act 1878 to FERA violations
+  (s.23A). No mention of Britain or sterling.
+- **26 July 1948 Import Trade Control notice + Appendix I** — **FOUND, full text.**
+  `primary_docs/GAZETTE_1948-07-29_ITC_Public_Notice_and_Appendix_I_FULLTEXT.md`. Ministry of
+  Commerce public notice setting currency-zone import licensing policy for July–December 1948,
+  with the full Appendix I/II/III tables in raw OCR appended for transcription.
+
+### Still open — exact URLs for a browser or a fresh Firecrawl session
+
+**Printed 1952 Statement of Objects and Reasons (Act VIII of 1952)** — the re-enactment that
+followed the *ultra vires* concern about Ordinance X. Not yet located. Next step is a **paged**
+metadata query — the 1952 Extraordinary Gazette has **940 items**, more than the 500-row query
+cap, and the first page (sorted arbitrarily, not chronologically) returned no "Foreign
+Exchange"/"FERA" hits. Fetch page two:
+```
+https://archive.org/advancedsearch.php?q=identifier:in.gazette.e.1952*&fl[]=identifier&fl[]=date&fl[]=description&rows=500&start=500&output=json
+```
+Grep the `description` field for "FOREIGN EXCHANGE" or "FERA". Given Deshmukh moved the Bill
+14 Feb 1952 (per the Provisional Parliament debate already found), the Bill/SOR Gazette entry
+should date from **January–February 1952**.
+
+**IMF Archives India consultation file** — browse (not full-text search, which is WAF-blocked):
+```
+https://archivescatalog.imf.org/index.php/search/detail?fieldname=Field_parentobjectnumber&value=132014&database=archive
+```
+then page through `/resultsnavigate/N` (~page 7 of 53, alphabetical by country) to reach India's
+Country Consultation Files, 1952–2002 series. Each file typically holds 3 documents/country/year.
+
+**GATT 1957 India consultation** — untried. GATT's own digital archive is the target:
+`https://www.wto.org/gattdocs/` or `https://gatt.wto.org/` — search the `BOP/` (Balance of
+Payments Committee) and `L/` (general Council) series for 1957–58, "India". AR1958 records GATT
+consulting India on import restrictions in H2 1957 with Fund Article XIV documentation handed
+over — that's the anchor date to search around.
+
+**Iengar's September 1957 IMF Annual Meetings panel transcript** — untried this pass. IMF Annual
+Meetings proceedings from the 1950s were printed as *Summary Proceedings* volumes; check
+`elibrary.imf.org` for "Summary Proceedings 1957 Annual Meeting" or the IMF Archives catalog
+(same browse interface as above, different parent series).
+
+**I. G. Patel, *Glimpses of Indian Economic Policy*** — confirmed `no_ebook` in the earlier pass;
+not web-retrievable. Library/purchase only.
