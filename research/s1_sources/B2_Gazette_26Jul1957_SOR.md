@@ -1,4 +1,23 @@
-# B2 — Statement of Objects and Reasons, FERA (Amendment) Bill 1957 (Gazette of India Extraordinary, Part II §2, 26 July 1957, pp. 1323–34)
+# B2 — Statement of Objects and Reasons, FERA (Amendment) Bill 1957
+
+> # ⚠️ SUPERSEDED — **B2 WAS SUBSEQUENTLY FOUND.**
+>
+> Everything below this box is the *obsolete* "not found" record from an earlier pass. It is retained only as an elimination log — do not act on its recommendations.
+>
+> **The document was recovered.** Full text: `primary_docs/GAZETTE_1957-07-26_FERA_Amendment_Bill_47_of_1957_SOR_FULLTEXT.md`
+>
+> **Route that worked:** the Internet Archive's Gazette `description` metadata field is queryable (it carries Ministry + Subject). Item `in.gazette.e.1957.235`, fetched at
+> `https://archive.org/cors/in.gazette.e.1957.235/E-2142-1957-0034-97071_djvu.txt`
+>
+> **The load-bearing quotation, T. T. Krishnamachari, 13 July 1957:**
+>
+> > "India still continues to be short of foreign exchange... the shortage is likely to continue for an indefinite period... Another important factor is the development programme under the Second Five Year Plan..."
+>
+> **The finding is negative for the essay's thesis: the Statement of Objects and Reasons contains no mention of Britain, sterling, the sterling balances, or the sterling agreement.** The reasons the Government itself gave for making exchange control permanent are (a) an indefinite foreign-exchange shortage and (b) the Second Five Year Plan. This is one of five independent 1956–57 documents now checked and found silent on Britain — see `README_and_summary.md`.
+>
+> The obsolete note below (point 2) states that the Gazette collection's numbering "is not date-sequential, so brute-force number-guessing is not viable." That remains true and is *why* the metadata-description route was necessary. That observation is the only part of the record below still worth keeping.
+
+---
 
 ### B2 — NOT FOUND
 **Route that worked:** N/A. Multiple routes attempted; none located the specific item.

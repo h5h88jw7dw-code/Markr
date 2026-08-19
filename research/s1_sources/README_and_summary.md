@@ -1,3 +1,50 @@
+# S1 Source Hunt — Run Summary (Pass 6)
+
+## PASS 6 HEADLINE: H1 and H8 both FOUND. T1.5 is now answered — and it forces a cut.
+
+Three things closed this pass, and one of them changes the essay's mechanism rather than just its evidence.
+
+| Target | Result |
+|---|---|
+| **H1** — IMF *Eighth Annual Report on Exchange Restrictions* (1957), India chapter | **FOUND, complete.** Printed pp.164–170, recovered in full. **The Fund gives no reason at all** for India's restrictions — the chapter is purely descriptive of mechanism. The hoped-for "blocked sterling" attribution (T0.1 called it "potentially the biggest available upgrade") **does not exist**: no mention of the sterling balances, the No. 1 or No. 2 Account, or reserve inadequacy anywhere in the chapter. See `H1_INDIA_CHAPTER_FOUND_and_T1.5_RESOLVED.md`. |
+| **T1.5** — the FERA double-gate | **RESOLVED, against the essay.** The Fund: "Where a valid import license is held, **the required exchange is released by authorized banks on presentation of the exchange control copy of the license**." Automatic, bank-executed, document-triggered. **The "FERA is the binding gate" paragraph must be cut** — the brief's own acceptance criterion. The binding constraint was the *licence* and the half-yearly Red Book quota policy, not the exchange release. |
+| **H8** — the 1951 six-year sterling agreement | **FOUND.** Deshmukh's statement to the **Provisional Parliament, 7 December 1950**: £35m a year for six years from 1 July 1951, carry-forward of unused amounts, consultation required to exceed by more than £5m. Counterparty named: **Hugh Gaitskell**. Expiry therefore **30 June 1957** — eight weeks before TTK moved FERA permanence. See `H8_1951_six_year_agreement_FOUND.md`. |
+| **H5** — the 1948 White Paper | **Still not found.** Two more routes eliminated this pass (eParlib title index → 84 modern White Papers, none 1948; 1948 Gazette `description` metadata → "Subject not available" throughout). Remaining routes are the UK side (Command Paper via Hansard) and the archives — see `MANUAL_SCRAPE_LINKS.md` §2.2. |
+
+### A procedural finding worth using
+
+The six-year agreement that governed India's access to its own reserves until June 1957 was **announced to the legislature in a four-paragraph ministerial statement and never debated.** Hussain Imam asked directly for a day to discuss "a very important financial arrangement"; Nehru replied, "We shall consider the matter, Sir, whether it should be discussed in the House or not," and the House adjourned. That parallels the 1957 FERA permanence passing in a single sitting (T2.3) and Chetty's 1948 complaint (U10) that six-monthly renegotiation made coherent policy impossible.
+
+### The negative finding is now at five documents
+
+Five independent 1956–57 documents have been checked and contain **no attribution of India's exchange control to Britain or sterling**: TTK's Interim Budget (Mar 1957), his final Budget (May 1957 — "sterling" appears zero times), the FERA Bill's Statement of Objects and Reasons (Jul 1957), his Lok Sabha speech (31 Aug 1957 — "Britain" appears zero times), and now the IMF's own India chapter. Meanwhile the 1948–50 record is saturated with exactly such attributions, from Chetty, Matthai, Neogy and Deshmukh in turn.
+
+**This remains the project's central result, and it is a two-claim problem.** "Britain constrained India, 1948–50" is heavily documented. "Britain caused the 1957 permanence" is, so far, documented nowhere. The essay must not let the first carry the second.
+
+**The one place that could still overturn it** is the Rajya Sabha's FERA debate of early September 1957 — the only substantial sitting on this Bill whose text nobody has read. It is browser-only; URLs are in `MANUAL_SCRAPE_LINKS.md` §2.1.
+
+### What the IMF chapter *does* give the essay
+
+Neutral third-party confirmation that India's system was **British in design and administratively conformant**: "Like other Sterling Area countries, India has an exchange control system similar to that in operation in the United Kingdom but adapted to suit local requirements," and payments were prescribed "for the most part in conformity with the exchange control regulations of the United Kingdom." That corroborates TTK's own remark in the 31 August 1957 debate that a seizure provision "is exactly on the lines of the British Exchange Control Act." Britain as **model** is now attested from both the Indian and the Fund side. Britain as **cause of permanence** is not.
+
+Also: the chapter's 1956 change-log shows India **liberalising** as late as 3 September 1956 (dollar dealing freed to market rates) and turning restrictive only from **27 December 1956** — compressing the whole reversal into roughly eight weeks around the turn of the year.
+
+### Tooling — the IMF parse ceiling, solved
+
+The India chapter had failed across three sessions. The cause was never credits; it was the MCP tool's hard **60-second timeout**. Earlier passes tried `maxPages` 186, 188, 190, 192 "to be safe" — all time out. The fix was to come **down**: **183 succeeds, 184 times out.** The chapter fits inside 183. Pages 184–388 (including the UK, Pakistan, Ceylon and Australasia chapters) remain unretrieved and need a browser — see `MANUAL_SCRAPE_LINKS.md` §1.1.
+
+### New this pass
+
+- `H1_INDIA_CHAPTER_FOUND_and_T1.5_RESOLVED.md`
+- `H8_1951_six_year_agreement_FOUND.md`
+- `primary_docs/IMF_8th_Annual_Report_1957_INDIA_CHAPTER_FULLTEXT.md`
+- `primary_docs/ProvisionalParliament_1950-12-07_Deshmukh_STERLING_BALANCES_STATEMENT_FULLTEXT.md`
+- `MANUAL_SCRAPE_LINKS.md` — **exact URLs for every remaining blocked target**, plus the three reusable search techniques (IA Gazette metadata, eParlib mirror, indiabudget.gov.in) written up so they can be re-run without me.
+
+`T1.5_import_trade_control_handbook.md` and `B2_Gazette_26Jul1957_SOR.md` now carry SUPERSEDED headers; their bodies are retained as elimination logs only.
+
+---
+
 # S1 Source Hunt — Run Summary (Pass 5, Opus)
 
 ## PASS 5 HEADLINE: the Gazette collection was cracked, and B2 — the project's #1 target — is FOUND.
