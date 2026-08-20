@@ -1,3 +1,42 @@
+# S1 Source Hunt — Run Summary (Pass 7)
+
+## PASS 7 HEADLINE: the RBI Ordinance's precise trigger is now a documented fact, not an estimate — and the 1957 date's own origin is found.
+
+Six new primary documents this pass, via a working `firecrawl_scrape` and a newly-discovered
+alternative platform (`elibrary.sansad.in`) for parliamentary debates.
+
+| Find | What it does |
+|---|---|
+| **Deshmukh, 14 Feb 1952** | The actual floor debate that set "31 December 1957" as FERA's intended sunset — the date the 1957 permanence amendment later legislated away. Reasons given: IMF membership obligations and an *ultra vires* concern. Zero Britain/sterling mentions. |
+| **GATT L/719, 23 Oct 1957** | **The single most important find of this pass.** Eight days before the RBI Ordinance, the Government of India states outright that reserves are "substantially below the minimum prescribed by law" (Rs 4,000 million) and describes the exact temporary-relaxation mechanism (Rs 3,000 million, 12-month limit) the Ordinance then formalised. Upgrades H7 from an arithmetic estimate to a documented fact. |
+| **GATT L/648/Add.1, 6 Aug 1957** | Three weeks before FERA permanence — India's reserves ("sterling balances... declining at about Rs.10 million per day") given as the reason for restriction. Read carefully: "sterling balances" is accounting terminology for reserve composition, not a claim of British constraint — flagged explicitly. |
+| **TTK's IMF statement, Sept 1957** | Speaking to the Fund three weeks after FERA permanence — the international audience most likely to hear a British-constraint argument, if one existed. TTK gives reserves, IMF drawings, and the Second Plan. Zero Britain/sterling mentions — the seventh such primary source in the project. |
+| **GATT L-series document index** | Resolves the "GATT 1957 India consultation" target with a working, complete, linkable index. |
+| **Rajya Sabha Sept 1957 — closed as a negative finding** | The DSpace platform that resolved items 1 and 4 above returns zero 1957 hits for FERA under any scope tried. Both routes to this debate (rsdebate.nic.in bitstreams, elibrary.sansad.in search) are now exhausted; still the largest open gap. |
+
+### The "sterling balances" nuance, stated plainly for future passes
+
+Two GATT documents (6 Aug and 23 Oct 1957) are the closest anything in this project comes to
+linking "sterling" with the 1957 restrictions — but both use "sterling balances" as **accounting
+terminology** (the currency form India's own reserves were held in, per the sterling-area
+arrangement), never as a claim that Britain restricted or withheld access to them. The causal
+story in both is: India's own trade deficit → India's own reserve decline → India's own
+restriction decision, financed by India's own IMF/IBRD borrowing. This is worth stating precisely
+in the essay, because it is simultaneously the strongest available textual proximity between
+"sterling" and "1957" and a further confirmation that the essay's original Britain-caused-it thesis
+does not hold.
+
+### New this pass — full file list
+
+- `primary_docs/ProvisionalParliament_1952-02-14_Deshmukh_FERA_Amendment_Bill_FULLTEXT.md`
+- `primary_docs/GATT_L648_Add1_1957-08-06_India_Statement_Import_Restrictions_FULLTEXT.md`
+- `primary_docs/GATT_L719_1957-10-23_India_Statement_Licensing_Policy_FULLTEXT.md`
+- `primary_docs/GATT_L-series_1957_India_document_index.md`
+- `primary_docs/IMF_TwelfthAnnualMeeting_1957-09_TTK_Governor_Statement_FULLTEXT.md`
+- `NEW_FINDS_pass_with_working_firecrawl.md` (this pass's full writeup)
+
+---
+
 # S1 Source Hunt — Run Summary (Pass 6)
 
 ## PASS 6 HEADLINE: H1 and H8 both FOUND. T1.5 is now answered — and it forces a cut.
