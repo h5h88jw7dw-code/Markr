@@ -56,7 +56,13 @@ https://elibrary.sansad.in/server/api/discover/search/objects?configuration=defa
 
 ## 4. The 1948 White Paper on Sterling Balances Negotiations (H5)
 
-**🔎 LEAD — new this pass.** The debate that cites the White Paper page-by-page (already saved,
+**✅ Practically superseded this pass** — the actual treaty text (not the White Paper compilation,
+but the operative agreement itself) was found at India's MEA archive. See
+`NEW_FINDS_this_pass.md` §1 and `primary_docs/MEA_1948_Financial_Agreement_Sterling_Balances_PARTIAL.md`.
+The literal White Paper is still not located; the notes below on the Command Paper number are kept
+for anyone who wants the parliamentary-compilation version specifically.
+
+**🔎 LEAD.** The debate that cites the White Paper page-by-page (already saved,
 `primary_docs/CAD_Legislative_1948-08-12_...md`) is itself a UK-side echo of a **UK Command
 Paper**. This pass found the Command Paper number for the *original* August 1947 agreement:
 **Cmd. 7195**. Chetty's February 1948 Budget speech (already saved, `U10`) states the 1948
@@ -78,22 +84,22 @@ Also try the UK Parliament's own Command Papers catalogue:
 https://hansard.parliament.uk/search/Contributions?startDate=1948-07-01&endDate=1948-08-31&searchTerm=India%20sterling%20balances
 ```
 
-## 5. Statement of Objects and Reasons, 1952 FERA amendment — **and a correction**
+## 5. Statement of Objects and Reasons, 1952 FERA amendment
 
-**Correction:** the earlier note (from the separate local session) said this Act was "Act VIII of
-1952." That is very likely wrong. This pass found independent confirmation the Act is
-**Foreign Exchange Regulation (Amendment) Act, 1952 — Act No. I (1) of 1952** — i.e. the *first*
-Act passed that year, consistent with Deshmukh moving it on 14 February 1952, before most of the
-year's other legislation. Use **Act I of 1952**, not Act VIII, in any citation until the Gazette
-item itself is seen.
+**✅ DIRECT, corrected.** The previous version of this file said the Act was "Act I of 1952,"
+based on a misread search snippet. **That was wrong — retract it.** The original local-session
+note was right: it is **Act VIII of 1952**, confirmed directly from indiacode.nic.in's own text:
+```
+https://www.indiacode.nic.in/repealedfileopen?rfilename=A1952-8.pdf
+```
+> "No. VIII of 1952 — 1. Short title.—This Act may be called the Foreign Exchange Regulation
+> (Amendment) Act, 1952."
 
-**🔎 LEAD** — constructed from the confirmed indiacode.nic.in URL pattern (unverified this pass;
-`indiacode.nic.in` rejected every fetch tool available):
-```
-https://www.indiacode.nic.in/repealedfileopen?rfilename=A1952-1.pdf
-```
-**Gazette route** (also unverified — `archive.org`'s API is blocked for direct fetch this
-session): page two of the 1952 Extraordinary Gazette index, which a first pass didn't reach:
+That's the **Act's own bare text**, confirmed and directly downloadable. Still outstanding: the
+**Statement of Objects and Reasons** (the Bill document, distinct from the enacted Act) —
+
+**🔎 LEAD** for that — page two of the 1952 Extraordinary Gazette index, which a first pass didn't
+reach (`archive.org`'s API is blocked for direct fetch this session):
 ```
 https://archive.org/advancedsearch.php?q=identifier:in.gazette.e.1952*&fl[]=identifier&fl[]=date&fl[]=description&rows=500&start=500&output=json
 ```
