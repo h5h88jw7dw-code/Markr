@@ -4,6 +4,8 @@
 >
 > **Track 2 claims no import licence functioned without an FERA-gated foreign exchange release behind it — that FERA was the "chief enabler" bottleneck standing behind the whole licensing apparatus. The primary regulatory text says the opposite, in terms, and so does every independent source checked.** The RBI's own *Exchange Control Manual* — the governing instrument for authorised dealers — provides that exchange for licensed imports "may be made by authorised dealers **without approval of Reserve Bank**." The RBI's official history dates the mechanism to **May 1940** and explains *why* there was no second gate: foreign exchange was allotted **upstream**, by an inter-departmental committee, and "**on the basis of these allotments import licences can be issued**." The licence *was* the exchange decision. There was never a second one behind it. Target 0.2's narrower rescue — capital goods as a specially FERA-gated category — also fails: the only RBI approvals attaching to capital goods concern **financing structure** (deferred payment, suppliers' credit, financial lease), not the exchange release for the import.
 >
+> **UPDATE, third pass — the last test is done.** The **Rajya Sabha FERA debate of 6 September 1957 has been recovered in full** (Finding 13), via the RS's own migrated API. It was the essay's last plausible hiding place for a British/sterling justification of permanence. **It is a clean negative, and it is now the strongest evidence in the project** — because it is the one debate where Bhupesh Gupta raised sterling on the floor ("*The British built those sterling balances… a forced accumulation*") and the Government answered directly: "*it is industrialisation and our developmental needs that have compelled us to draw on our sterling balances.*" A backbencher supplied the summary: "**Crisis of development.**" The minister's stated reason for permanence was one sentence long — "*India is still short of foreign exchange*". **The British-causation claim should now be reported as refuted, not merely unproven.**
+>
 > **UPDATE, second pass:** Findings 9–12 were added after the initial verdict. Nothing in them disturbs the kill — one of them (Finding 9) **strengthens** it by showing the discretionary gate Track 2 imagined did exist, but stood behind the individual traveller rather than the importing firm. Finding 10 substantially answers Target 1.2 and is the other headline result: the BTQ's named ancestor, the "**basic allowance**" for travel, was **abolished outright effective 1 January 1957** — eight months before FERA was made permanent. Finding 7's tag is upgraded CONVERGENT → STATED on the strength of Finding 9.
 >
 > **The one thing in this run that matters most is Finding 6 — and it is a Classic-side win, not a Track 2 rescue.** The RBI's official history states that personal-travel foreign exchange amounts "**varied according to the overall foreign exchange position**." That wires the Basic Travel Quota's near-zero ceiling directly to the reserve constraint Classic already proves via Locks A and B — giving Classic a human-scale consequence on its own mechanism, with no need to borrow Track 2's framing at all. Finding 7 is the structural correction that follows: FERA's genuine discretionary gate operated on **persons** (travel, remittances, emigration), not on **trade**. That is a smaller claim than Track 2's, and unlike Track 2's, it is true.
@@ -278,6 +280,150 @@ with the surrounding index fragments confirming the document's identity and spea
 
 ---
 
+## TIER 2 (continued) — third pass: the Rajya Sabha debate
+
+### Finding 13 — ⭐⭐ Target 2.3 CLOSED. The Rajya Sabha FERA debate is recovered in full, and the essay's original thesis fails its last available test.
+**Serves: Classic / All** — Grade **A**
+
+**Source:** Rajya Sabha Official Debates, Vol. 18, **6 September 1957**, printed pp. ~3928–3954.
+Full text saved at `primary_docs/RajyaSabha_1957-09-06_FERA_Amendment_Bill_FULL_DEBATE.md`.
+
+**The route that finally worked, after every previously-documented route failed:**
+```
+https://sansad.in/api_rs/debate/date-wise-debate?sessionNo=18
+```
+returns JSON listing every sitting of Session 18 with a direct PDF URL on `cms.rajyasabha.nic.in`:
+```
+https://cms.rajyasabha.nic.in/UploadedFiles/Debates/OfficialDebatesDatewise/Floor/18/F06.09.1957.pdf
+```
+**Record the negatives too, so nobody retries them:** `rsdebate.nic.in` fails on every engine
+including stealth proxy; the Wayback Machine has never crawled that host (confirmed by API,
+`{"archived_snapshots": {}}`); and the **eParlib Internet Archive mirror carries Lok Sabha only** for
+September 1957 — a date-range query returned 16 items, every one Lok Sabha or a committee report.
+
+**Why this finding is decisive.** This sitting was the last plausible hiding place for a
+British/sterling justification of permanence: the upper house, longer speeches, more sceptical
+members, and Bhupesh Gupta (CPI) — who *does* attack the sterling relationship in this very debate.
+It is the only debate in the project where the sterling question was **raised on the floor by a
+hostile member and answered by the Government on the record.**
+
+**(a) The Government's reason for permanence — Shri B. R. Bhagat, Deputy Minister of Finance:**
+> "The Foreign Exchange Regulation Act, 1947, is a temporary Act due to expire on the 31st December,
+> 1957. **It was being extended every five years in the expectation of better times, instead of being
+> placed on a permanent footing straight way. India is still short of foreign exchange and I see no
+> reason why this Act should not be extended without specifying a time limit.** This object is sought
+> to be achieved by deleting the duration clause from section 1 of the principal Act."
+
+One reason: foreign exchange shortage. **No Britain. No sterling. No mention of the six-year
+agreement that had expired ten weeks earlier.** Note "in the expectation of better times" — the same
+register as Deshmukh in 1952 and TTK, i.e. a settled official narrative of a wager lost.
+
+**(b) Bhupesh Gupta's actual argument, recovered verbatim at last:**
+> "Then, Sir, we spend our foreign exchange in London by paying the deficit in the balance of
+> payments... **The British built those sterling balances not through voluntary transactions as far
+> as India is concerned. They were again a forced accumulation.** One should have thought that this
+> Government would take every care to so utilise these sterling balances that we could undo the
+> mischief of the British in this country... **Even that was not done.**"
+
+> "Now, Sir, again there is the sterling reserve for our currency... Considering that the rupee is
+> strong, then, **why must be this currency reserve in sterling, in England? Many countries do not
+> have such a reserve.**"
+
+**Read precisely.** Gupta attacks (i) the *Government* for squandering the balances and (ii) the
+*sterling currency reserve* as an unnecessary colonial residue. He does **not** argue that Britain
+caused, compelled or required FERA's permanence. He is criticising the Bill's context, not
+justifying the Bill. The essay may quote "forced accumulation" and "the mischief of the British" for
+the **wartime** balances — genuinely good material — but must not let those phrases drift into
+standing for a 1957 causal claim they do not make.
+
+**(c) The Government answered the sterling charge directly — and named the Plan:**
+> **SHRI B. R. BHAGAT:** "My conception is that the foreign exchange crisis is not due to the fact
+> that we have been squandering our resources. Nothing of the kind. We have successfully implemented
+> the First Five Year Plan. We are implementing the Second Five Year Plan, and **it is
+> industrialisation and our developmental needs that have compelled us to draw on our sterling
+> balances.**"
+>
+> **SHRI P. D. HIMATSINGKA:** "**Crisis of development.**"
+
+**This is the money passage of the entire project.** Directly challenged on sterling, in the upper
+house, ten weeks after the six-year agreement lapsed, the Government's answer is *industrialisation
+and developmental needs*. A backbencher supplies the three-word summary: "crisis of development."
+
+**Confidence: STATED.** Official parliamentary record, ministers' and members' own words.
+
+**Verdict:** the eighth independent 1956–57 source giving non-British reasons — and uniquely, the one
+where the question was actually put. **There is no remaining substantial primary document in which
+the British-causation claim could still be hiding.** It should now be stated as refuted, not as
+unproven.
+
+---
+
+### Finding 14 — Bonus from the same debate: the ORIGINAL 1946 Statement of Objects and Reasons, read into the record.
+**Serves: Classic / Combined** — Grade **B**
+
+**Source:** same debate — Shri Amolakh Chand (Uttar Pradesh), narrating the Act's history and
+quoting the 1946 Finance Minister's Statement of Objects and Reasons.
+
+> "**The shortage of foreign exchange is likely to continue in view of the disruption of the internal
+> economy** ... [and] the general interests of the country. Also **the adherence of India to the
+> International Monetary Fund requires her to take certain [powers over] foreign exchange in order to
+> fulfil the obligations of membership. Legislation is therefore necessary.**"
+
+He also dates the machinery's origin from the floor: "under the Defence of India Rules for the first
+time the question of foreign exchange arose in India. Under the Defence of India Rules of **1939**
+foreign exchange was to be regulated, and it was to be regulated in non-sterling areas. The Defence
+of India Rules expired in March, 1946."
+
+**What it does:** the two reasons in the 1946 SOR — **foreign exchange shortage** and **IMF
+membership obligations** — are the *same two* Deshmukh gave in February 1952 (Finding, `T1.5`/1952
+debate file) and the *same one* Bhagat gives in September 1957. **Eleven years, three ministers, one
+consistent pair of reasons, and Britain in none of them.** This is the tightest available answer to
+the objection that the 1957 justification was merely a convenient late gloss.
+
+It also independently corroborates I1 (the machinery predates FERA) from a second direction, and
+dates it to **1939** rather than 1940.
+
+---
+
+### Finding 15 — Sterling-area comparators from a single neutral source: Ceylon kept its travel ration; Australia shows the same trade/person asymmetry.
+**Serves: Classic (T0.3) / Combined** — Grade **B**
+
+**Source:** IMF, *AREAER 1956* (Seventh Annual Report, ISBN 9781475549188), country chapters for
+Ceylon, Australia and Burma, describing each system as at end-1955. Saved at
+`primary_docs/IMF_AREAER_1956_sterling_area_comparators_Australia_Burma_Ceylon.md`.
+
+**Ceylon** — the closest comparator, and it did *not* go to zero:
+> "The allocation of exchange for tourist travel is subject to **basic rations, which vary according
+> to the country to be visited; however, no basic ration is allocated for tourist travel to the
+> dollar area.**"
+
+A sterling-area country with the same colonial inheritance and the same Article XIV status
+**maintained a tourist-travel ration for non-dollar destinations at end-1955**, restricting only
+dollar-area tourism. India abolished its basic allowance **entirely, for all destinations**, from
+1 January 1957. **State the 12-month gap explicitly** rather than implying simultaneity.
+
+**Australia** — the Finding 9 asymmetry, confirmed in a second country:
+> "All payments in respect of invisibles come under exchange control, but **approval is given freely
+> for most items**... **Restrictions apply, however, to allocations of foreign exchange for travel**…"
+
+Same structure as India's 1957 chapter: invisibles freely approved in general, travel named as the
+exception. **This cuts two ways and the essay must say so:** it *strengthens* the structural claim
+that exchange control's discretionary bite fell on persons not trade (Findings 7 and 9), but it
+*weakens* any suggestion that India's treatment of travellers was distinctively harsh or
+distinctively British-imposed — Australia, a self-governing dominion, did the same.
+
+**Burma** — an independent check on a figure quoted on the Rajya Sabha floor:
+> "Travelers to India may take out not more than **Rs 270** in Indian notes and coin, of which not
+> more than Rs 100 may be in currency notes."
+
+Compare Shri Kishen Chand in the 6 September 1957 debate: "**It is exactly Rs. 270-0-0.**" The IMF's
+independent 1956 documentation matches the MP's 1957 floor correction exactly — a clean
+cross-confirmation of a currency figure from two unrelated sources.
+
+**Confidence: STATED** for each country at its stated date.
+
+---
+
 ## Incidental captures
 
 **I1 — The Exchange Control Manual's own origin date, and FERA's relationship to it.** RBI Vol. 1, p. ~354: "The initial instructions issued by the Bank in respect of exchange control as well as those issued from time to time modifying, deleting or adding to them were codified and published in the form of an **Exchange Control Manual in June 1940**; revised editions of the Manual were issued from time to time." *Significance:* the exchange-control machinery was codified **seven years before FERA 1947**, under Defence of India Rules. This independently corroborates the Kamtekar position the brief says is already established (wartime origin) — and it means FERA 1947 codified an existing administrative apparatus rather than creating one. Useful for Classic's framing of what the 1957 permanence actually made permanent.
@@ -296,11 +442,11 @@ with the surrounding index fragments confirming the document's identity and spea
 
 Logged honestly rather than silently dropped. None of these was reached before the run's budget was consumed by Tier 0.
 
-- **Target 1.1** (the 1955 relaxation premise — IMF AREAER 1955/1956): **BLOCKED, with the cause now diagnosed.** The *Annual Report on Exchange Arrangements and Exchange Restrictions 1955* is free and open at `https://www.elibrary.imf.org/downloadpdf/display/book/9781475548662/9781475548662.pdf` — **391 pages, 33.5 MB**, ISBN 9781475548662, published 1 Sept 1955, and the eLibrary record states "This publication is available in PDF format only" (no chapter-XML route, unlike the Summary Proceedings volume). **The blocker is file size, not page count:** a parse limited to just **12 pages** timed out at the tool's 60-second ceiling, exactly as a 183-page parse did. The whole file must be downloaded before any page is parsed, and 33.5 MB does not complete in 60 seconds. **No `maxPages` value will ever work for this file through this tool.** It is a clean one-click browser download; India's chapter should sit near printed pp. 160–175 by the alphabetical ordering the 1957 edition uses.
+- **Target 1.1** (the 1955 relaxation premise — IMF AREAER 1955/1956): **PARTIALLY SERVED, and the ceiling now measured exactly.** The **1956** volume (16.4 MB, ISBN 9781475549188) parses to **120 pages (succeeds) / 150 pages (times out)** — so pp. 1–120 were captured, yielding the sterling-area comparators in Finding 15, but **India sits at printed p. 162 ≈ PDF p. 177 and is unreachable.** The 1955 volume is worse — see below. Original diagnosis retained: The *Annual Report on Exchange Arrangements and Exchange Restrictions 1955* is free and open at `https://www.elibrary.imf.org/downloadpdf/display/book/9781475548662/9781475548662.pdf` — **391 pages, 33.5 MB**, ISBN 9781475548662, published 1 Sept 1955, and the eLibrary record states "This publication is available in PDF format only" (no chapter-XML route, unlike the Summary Proceedings volume). **The blocker is file size, not page count:** a parse limited to just **12 pages** timed out at the tool's 60-second ceiling, exactly as a 183-page parse did. The whole file must be downloaded before any page is parsed, and 33.5 MB does not complete in 60 seconds. **No `maxPages` value will ever work for this file through this tool.** It is a clean one-click browser download; India's chapter should sit near printed pp. 160–175 by the alphabetical ordering the 1957 edition uses.
 - **Target 1.2** (BTQ statutory basis; earliest figure): **SUBSTANTIALLY ANSWERED — see Finding 10, with Finding 6.** Statutory basis resolved by date (the 1956–57 basic allowance necessarily ran under FERA **1947**, not 1973). Earliest datum found and it is better than a figure: the "basic allowance… for travel abroad for pleasure or personal convenience" was **abolished outright effective 1 January 1957**. What remains open, and is flagged INFERRED in Finding 10, is the continuous administrative lineage from that 1956 instrument to the thing later called the BTQ.
 - **Target 1.3** (famine/PL-480 causal precision): attempted, **negative result — and this one should be treated as informative, not merely as a gap.** A targeted search for scholarly assessment that the 1957-onward regime's *institutionalized or permanent character* worsened the 1965–67 crisis response returned nothing on point. What the literature on India's mid-1960s crisis actually discusses is reserve depletion (import cover down to roughly two months by 1965), the devaluation decision of 6 June 1966, aid conditionality and donor pressure, and the politics of the devaluation itself. **No source found argues that exchange control's permanence — as distinct from the shortage itself — was a source of rigidity in the response.** Per the brief's own instruction: until such an assessment is found, the Bihar famine and PL-480 material must appear in the essay as **era scene-setting only, not as an evidenced FERA consequence**, and the essay should not imply otherwise through adjacency or ordering. Note also the counterfactual problem is genuine: two failed monsoons would have produced a foreign exchange crisis under a temporary regime too, and no source found distinguishes the two cases.
 - **Target 1.4** (FERA's rank among Kamtekar's pillars — Panagariya): attempted, **negative result** — Panagariya's *India: The Emerging Giant* is not available in full text through any route reachable here (ResearchGate/Scribd listings only, no readable body text). Findings 3 and I1 both bear on the question indirectly, and both point **away** from FERA being load-bearing for the other pillars: exchange allocation was decided by a Finance-chaired inter-departmental committee with the RBI as one voice among several (Finding 3), and the control machinery predates FERA by seven years (I1).
 - **Target 2.1** (Pakistan's 1952 Act verified against the amending Act itself): **partially served — see Finding 8** — and a further attempt this run to locate the amending Act's own text returned **zero results** (targeted search on the Act's title, number and operative section). The Pakistan Code does not appear to expose pre-1958 amending Acts in any web-reachable form. Still rests on two non-independent consolidated texts. **Recommend a library or Pakistan Code request; this is unlikely to yield to further web search.**
 - **Target 2.2** (independent corroboration of the 1957 US Treasury argument beyond Balachandran): **attempted — NEGATIVE, see Finding 11.** FRUS Vol. VIII's India chapter (Docs 143–184) contains no Treasury argument about IMF subscription composition. The claim still rests on Balachandran alone and must not be presented as corroborated. Untried and more promising: **NAC (National Advisory Council on International Monetary and Financial Problems) records**, which FRUS does not reproduce.
-- **Target 2.3** (Bhupesh Gupta, Rajya Sabha, 6 September 1957): **advanced — see Finding 12.** The sitting is now confirmed to exist at the cited URL, confirmed to contain the FERA debate, confirmed to include a Bhupesh Gupta speech, and one line is recovered verbatim through a search index. The document itself remains unfetchable, and **Wayback's emptiness is now verified by API response rather than assumed**. Browser-only.
+- **Target 2.3** (Bhupesh Gupta, Rajya Sabha, 6 September 1957): ✅ **CLOSED — see Finding 13.** Recovered in full via the Rajya Sabha's own migrated API (`sansad.in/api_rs/debate/date-wise-debate?sessionNo=18` → direct PDF on `cms.rajyasabha.nic.in`). Finding 12 is superseded by Finding 13 and retained only as the record of how the fragment was first located.
 - **Target 2.4** (five browser-only downloads): unchanged; still browser-only. See `REMAINING_DOCUMENTS_EXACT_LINKS.md`.
