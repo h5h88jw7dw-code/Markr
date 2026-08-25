@@ -4,6 +4,8 @@
 >
 > **Track 2 claims no import licence functioned without an FERA-gated foreign exchange release behind it — that FERA was the "chief enabler" bottleneck standing behind the whole licensing apparatus. The primary regulatory text says the opposite, in terms, and so does every independent source checked.** The RBI's own *Exchange Control Manual* — the governing instrument for authorised dealers — provides that exchange for licensed imports "may be made by authorised dealers **without approval of Reserve Bank**." The RBI's official history dates the mechanism to **May 1940** and explains *why* there was no second gate: foreign exchange was allotted **upstream**, by an inter-departmental committee, and "**on the basis of these allotments import licences can be issued**." The licence *was* the exchange decision. There was never a second one behind it. Target 0.2's narrower rescue — capital goods as a specially FERA-gated category — also fails: the only RBI approvals attaching to capital goods concern **financing structure** (deferred payment, suppliers' credit, financial lease), not the exchange release for the import.
 >
+> **UPDATE, second pass:** Findings 9–12 were added after the initial verdict. Nothing in them disturbs the kill — one of them (Finding 9) **strengthens** it by showing the discretionary gate Track 2 imagined did exist, but stood behind the individual traveller rather than the importing firm. Finding 10 substantially answers Target 1.2 and is the other headline result: the BTQ's named ancestor, the "**basic allowance**" for travel, was **abolished outright effective 1 January 1957** — eight months before FERA was made permanent. Finding 7's tag is upgraded CONVERGENT → STATED on the strength of Finding 9.
+>
 > **The one thing in this run that matters most is Finding 6 — and it is a Classic-side win, not a Track 2 rescue.** The RBI's official history states that personal-travel foreign exchange amounts "**varied according to the overall foreign exchange position**." That wires the Basic Travel Quota's near-zero ceiling directly to the reserve constraint Classic already proves via Locks A and B — giving Classic a human-scale consequence on its own mechanism, with no need to borrow Track 2's framing at all. Finding 7 is the structural correction that follows: FERA's genuine discretionary gate operated on **persons** (travel, remittances, emigration), not on **trade**. That is a smaller claim than Track 2's, and unlike Track 2's, it is true.
 
 ---
@@ -143,7 +145,7 @@ On persons — RBI discretion is real and explicit:
 
 Against trade — no such discretion, per Findings 1–4.
 
-**Confidence: CONVERGENT** — no single source states this asymmetry as a proposition; it is the consistent pattern across every source checked. Tagged as inference, not as a quoted finding.
+**Confidence: UPGRADED TO STATED — see Finding 9.** This finding was originally tagged CONVERGENT on the ground that no single source stated the trade/person asymmetry as a proposition. That is no longer true: the IMF's 1957 India chapter states it directly, in two sentences, and Finding 9 sets them out. The asymmetry is now sourced, not inferred.
 
 **What it does to the claim:** this is what the essay should say **instead of** Track 2. FERA's discretionary machinery — the Exit (Finance) Permit, the 'P' form, the personal-convenience allowance indexed to the reserve position, emigrant transfer limits, maintenance remittances "gradually made more stringent" — bore on **individuals**. On trade, FERA's role was ministerial: banks released exchange against a document, and the actual rationing had already happened upstream at the allocation-and-licensing stage (Finding 3).
 
@@ -179,6 +181,103 @@ This is a **smaller** claim than "chief enabler of the Licence-Permit Raj." It i
 
 ---
 
+## TIER 1 (continued) — second pass
+
+### Finding 9 — ⭐ The trade/person asymmetry is STATED, not inferred. Travel is the named exception to "granted freely," and personal travel required individual application.
+**Serves: Combined (upgrades Finding 7 from CONVERGENT to STATED)** — Grade **A**
+
+**Source:** IMF, *Eighth Annual Report on Exchange Restrictions* (1957), India country chapter — the same document as Finding 4, under "Payments for and from Invisibles." Already in project files as `primary_docs/IMF_8th_Annual_Report_1957_INDIA_CHAPTER_FULLTEXT.md`, lines 49 and 61.
+
+**Verbatim, sentence one — travel named as the exception:**
+> "In general, payments abroad for invisibles require approval. However, **except for travel, insurance, and a few other items, foreign exchange is granted freely** for such payments, especially for expenses incidental to trade transactions and transfers of recurring contractual obligations."
+
+**Verbatim, sentence two — the actual double gate, and where it sat:**
+> "Foreign exchange facilities are granted for business travel and education abroad according to **a scale of allowances fixed for each country. To obtain exchange for travel for other purposes, individual application must be made.**"
+
+**Confidence: STATED** for end-1956/1957 — contemporaneous, the Fund's own country survey.
+
+**What it does to the claim:** this is the finding that converts Finding 7 from a pattern I had noticed into a proposition a source asserts. Put the two sentences beside Finding 1's ECM text and the contrast is explicit and symmetrical:
+
+| | Trade (imports) | Persons (travel) |
+|---|---|---|
+| Default | exchange released by banks **without RBI approval**, on production of the licence | approval **required**; travel is a **named exception** to "granted freely" |
+| Business/education | — | fixed **scale of allowances** per country |
+| Personal/other | — | **"individual application must be made"** |
+
+**The discretionary, case-by-case, apply-to-the-authority gate that Track 2 imagined standing behind every import licence did exist — but it stood behind the individual traveller, not the importing firm.** That is Track 2's mechanism relocated, not resurrected: it cannot bear the "chief enabler of the Licence-Permit Raj" weight, because the Licence-Permit Raj was a system for regulating *firms and production*, and this gate did not operate there.
+
+---
+
+### Finding 10 — ⭐ Target 1.2: the Basic Travel Quota's ancestor is named "basic allowance", and it was cut to ZERO effective 1 January 1957.
+**Serves: Classic / Combined** — Grade **A**
+
+**Source:** IMF, *Eighth Annual Report on Exchange Restrictions* (1957), India chapter, "Changes during 1956" chronology — the same document, line 111.
+
+**Verbatim:**
+> "**December 27.** It was announced that **beginning January 1, 1957 there would be no basic allowance of foreign exchange for travel abroad for pleasure or personal convenience.**"
+
+**Confidence: STATED** for the date and the measure (contemporaneous IMF chronology of Indian policy changes).
+
+**What it does to the claim — this substantially answers Target 1.2, and the answer is more useful than the figure the brief asked for.** The brief wanted "the earliest BTQ figure available, ideally from the 1950s or 1960s rather than 1977, to check whether the same near-zero ceiling existed close to the 1957 permanence itself, or whether it tightened progressively."
+
+The answer is neither, exactly, and it is sharper than either:
+
+1. **The instrument existed under that name-family in 1956.** The Fund calls it a "**basic allowance** of foreign exchange for travel abroad" — the direct lexical and functional ancestor of the "**Basic** Travel Quota." Combined with Finding 6 (RBI's history, 1946–51: amounts "varied according to the overall foreign exchange position"), the instrument and its reserve-indexation are both documented well before 1957.
+2. **Its 1957 value was not small. It was nil.** Not $108, not a squeezed figure — abolished outright for pleasure and personal-convenience travel, effective **1 January 1957**.
+3. **The date is eight months before FERA permanence** (Lok Sabha, 31 August 1957) and sits inside the same eight-week policy reversal at the turn of 1956–57 that the H1 writeup already documents (India was still *liberalising* dollar dealing on 3 September 1956; the first restrictive measure in the Fund's log is 27 December 1956).
+
+**On the statutory-basis half of Target 1.2 — answered by date, and it favours the essay.** The 1956–57 basic allowance necessarily operated under **FERA 1947**, because FERA 1973 did not exist. So the instrument the essay wants to credit to FERA is credited to the *right* FERA — the one whose permanence is the essay's subject — rather than to the 1973 successor. **Confidence: STATED** (a measure in force on 1 January 1957 cannot rest on a 1973 statute).
+
+**What remains INFERRED, and must stay labelled so:** the line from this 1957 abolition to the 1977 $108 figure and the 1997 $2,000 figure. The 1977 and 1997 figures are real (the $2,000 BTQ Scheme figure is confirmed in a later AREAER edition, ISBN 9781451941852), but **no source found in this run traces a continuous administrative lineage from the 1956 "basic allowance" through to the instrument called the BTQ.** The essay may say the ancestor existed, was reserve-indexed, and went to zero in 1957 — all STATED. It may not say "the BTQ was introduced in X and ratcheted down" without separate evidence.
+
+**A caution on currency conversion, per the brief's Agrawal rule:** if the essay converts the 1977 $108 or any other figure to modern terms, cite the index in the same sentence. This run introduces **no** modern-equivalent figures, deliberately. The one conversion basis this project has verified is **£1 = Rs 13.33 until 6 June 1966** (see I4), which is a period Rs/£ rate, not an inflation adjustment, and cannot do inflation work.
+
+---
+
+## TIER 2 (continued) — second pass
+
+### Finding 11 — Target 2.2: NEGATIVE. FRUS Volume VIII's India chapter contains no US Treasury argument about IMF subscription composition.
+**Serves: Classic (closes a line of inquiry)** — Grade **B** (negative finding)
+
+**What was searched:** the complete document list for FRUS 1955–1957 Vol. VIII, "United States Relations with India… the Question of Economic Assistance" (Documents 143–184), enumerated in full at `https://history.state.gov/historicaldocuments/frus1955-57v08/ch6`. Documents 165, 166 and 167 read in full.
+
+**Result:** no document found in which the US Treasury — or anyone else — argues that India's IMF drawing rights were constrained by the gold-versus-sterling-versus-dollar composition of its subscription. Treasury's recorded position in this volume is about **aid appropriations**, not Fund mechanics. From Doc 165's editorial footnote:
+> "Burgess informed Dillon on May 2 that **Treasury did not object to more assistance for India if the funds were reallocated from funds originally intended for other areas**, but would not likely support any approach to Congress to gain additional funds for a higher level of assistance."
+
+And Doc 169's source note records the disagreement without an IMF dimension:
+> "The Departments of the Treasury and Agriculture did not share the Department of State's conclusion, but produced no written dissent."
+
+**Confidence: NEGATIVE FINDING, stated as such.** This does **not** show the Balachandran-sourced Treasury argument is wrong — only that FRUS Vol. VIII's India chapter does not corroborate it. The argument may well sit in NAC (National Advisory Council on International Monetary and Financial Problems) records or Treasury files, neither of which is in FRUS. **Target 2.2 therefore remains genuinely open, and the claim still rests on Balachandran alone. The essay should not present it as independently corroborated.**
+
+**One genuine gain from the same search, relevant to Classic's Lock A.** Doc 166 (B.K. Nehru to Dillon, 31 May 1957) independently corroborates the reserve-floor mechanism from the *Indian* side, to a foreign government, three months before FERA permanence:
+> "The planned reduction of $400 million in reserves has already been exceeded, since India has used $650 million of reserves since April, 1956. India has already drawn $127½ million from the International Monetary Fund. Nevertheless, **well before the end of this year Indian reserves will be reduced to their legal minimum. While India has the authority to go below this level temporarily, to do so would raise grave questions of the stability of its money.**"
+
+That is the Rs 400 crore statutory floor and the temporary-relaxation power — the exact pair GATT L/719 states on 23 October 1957 — described by India's Finance Secretary on **31 May 1957**, five months earlier. **Confidence: STATED.** Classic's Lock A now has three independent contemporaneous witnesses: B.K. Nehru to the US (May), the Government of India to GATT (October), and the RBI Ordinance itself (31 October).
+
+---
+
+### Finding 12 — Target 2.3: the Bhupesh Gupta sitting is CONFIRMED to exist and one line is recovered verbatim, but the document remains unfetchable.
+**Serves: Classic** — Grade **C** (fragment only)
+
+**Source:** `https://rsdebate.nic.in/bitstream/123456789/572037/2/ID_18_06091957_17_p3928_p3954_5.pdf` — Rajya Sabha, Vol. 18, 6 September 1957, pp. 3928–3954. Recovered **through a search engine's index of the PDF**, not by fetching it; direct retrieval failed against every engine tried.
+
+**Verbatim, as held in the index:**
+> "**The Foreign Exchange Regulation Act, 1947, is a temporary Act due to expire on the 31st December, 1957.**"
+
+with the surrounding index fragments confirming the document's identity and speaker:
+> "SHRI B.K. MUKERJEE: No speech, Sir, but only one question." … "Foreign Exchange [ RAJYA SABHA ] … [Shri Bhupesh Gupta"
+
+**What this establishes, and what it does not.** Establishes: the sitting is correctly cited (Vol. 18, 6 Sept 1957, pp. 3928–3954); it does contain the FERA debate; **Bhupesh Gupta did speak on it** (the square-bracket convention `[Shri Bhupesh Gupta` is the running header marking a continued speech, so his contribution ran across pages); and the Act's temporary character and 31 December 1957 expiry were stated on the floor of the upper house. Does **not** establish anything about what Gupta actually argued. **Do not attribute any position to him on this fragment.**
+
+**Access status, now definitively tested rather than asserted.** Three routes closed this run:
+1. Direct fetch — all engines failed.
+2. **Wayback Machine — confirmed empty by API, not merely assumed.** `https://archive.org/wayback/available?url=rsdebate.nic.in/...` returns `{"archived_snapshots": {}}`. The host has never been crawled.
+3. `elibrary.sansad.in` DSpace API — zero 1957 FERA hits under every scope (prior run).
+
+**It remains browser-only, and it remains the single largest gap in the project's primary record.** But it is now a *located* gap: the URL is verified live enough to be indexed, so it should open in an ordinary browser.
+
+---
+
 ## Incidental captures
 
 **I1 — The Exchange Control Manual's own origin date, and FERA's relationship to it.** RBI Vol. 1, p. ~354: "The initial instructions issued by the Bank in respect of exchange control as well as those issued from time to time modifying, deleting or adding to them were codified and published in the form of an **Exchange Control Manual in June 1940**; revised editions of the Manual were issued from time to time." *Significance:* the exchange-control machinery was codified **seven years before FERA 1947**, under Defence of India Rules. This independently corroborates the Kamtekar position the brief says is already established (wartime origin) — and it means FERA 1947 codified an existing administrative apparatus rather than creating one. Useful for Classic's framing of what the 1957 permanence actually made permanent.
@@ -197,11 +296,11 @@ This is a **smaller** claim than "chief enabler of the Licence-Permit Raj." It i
 
 Logged honestly rather than silently dropped. None of these was reached before the run's budget was consumed by Tier 0.
 
-- **Target 1.1** (the 1955 relaxation premise — IMF AREAER 1955 and 1956 editions): **located but not retrieved.** The *Sixth Annual Report on Exchange Restrictions* (1955) is free and open at `https://www.elibrary.imf.org/display/book/9781475548662/9781475548662.pdf` (the Seventh, 1956, is 371pp and the Eighth, 1957, 375pp per the Fund's own 1958 bibliography). A page-limited parse timed out at the tool's 60-second ceiling, the same constraint documented for the 1957 edition. **This is a clean, one-click manual download** — India's chapter should sit near printed pp. 160–175 by the alphabetical ordering the 1957 edition uses.
-- **Target 1.2** (BTQ statutory basis; earliest figure): **partially served by Finding 6** for the principle and the 1946–51 period. The specific statutory basis (1947 Act vs. 1973 Act) and the earliest named BTQ figure remain unestablished.
+- **Target 1.1** (the 1955 relaxation premise — IMF AREAER 1955/1956): **BLOCKED, with the cause now diagnosed.** The *Annual Report on Exchange Arrangements and Exchange Restrictions 1955* is free and open at `https://www.elibrary.imf.org/downloadpdf/display/book/9781475548662/9781475548662.pdf` — **391 pages, 33.5 MB**, ISBN 9781475548662, published 1 Sept 1955, and the eLibrary record states "This publication is available in PDF format only" (no chapter-XML route, unlike the Summary Proceedings volume). **The blocker is file size, not page count:** a parse limited to just **12 pages** timed out at the tool's 60-second ceiling, exactly as a 183-page parse did. The whole file must be downloaded before any page is parsed, and 33.5 MB does not complete in 60 seconds. **No `maxPages` value will ever work for this file through this tool.** It is a clean one-click browser download; India's chapter should sit near printed pp. 160–175 by the alphabetical ordering the 1957 edition uses.
+- **Target 1.2** (BTQ statutory basis; earliest figure): **SUBSTANTIALLY ANSWERED — see Finding 10, with Finding 6.** Statutory basis resolved by date (the 1956–57 basic allowance necessarily ran under FERA **1947**, not 1973). Earliest datum found and it is better than a figure: the "basic allowance… for travel abroad for pleasure or personal convenience" was **abolished outright effective 1 January 1957**. What remains open, and is flagged INFERRED in Finding 10, is the continuous administrative lineage from that 1956 instrument to the thing later called the BTQ.
 - **Target 1.3** (famine/PL-480 causal precision): attempted, **negative result — and this one should be treated as informative, not merely as a gap.** A targeted search for scholarly assessment that the 1957-onward regime's *institutionalized or permanent character* worsened the 1965–67 crisis response returned nothing on point. What the literature on India's mid-1960s crisis actually discusses is reserve depletion (import cover down to roughly two months by 1965), the devaluation decision of 6 June 1966, aid conditionality and donor pressure, and the politics of the devaluation itself. **No source found argues that exchange control's permanence — as distinct from the shortage itself — was a source of rigidity in the response.** Per the brief's own instruction: until such an assessment is found, the Bihar famine and PL-480 material must appear in the essay as **era scene-setting only, not as an evidenced FERA consequence**, and the essay should not imply otherwise through adjacency or ordering. Note also the counterfactual problem is genuine: two failed monsoons would have produced a foreign exchange crisis under a temporary regime too, and no source found distinguishes the two cases.
 - **Target 1.4** (FERA's rank among Kamtekar's pillars — Panagariya): attempted, **negative result** — Panagariya's *India: The Emerging Giant* is not available in full text through any route reachable here (ResearchGate/Scribd listings only, no readable body text). Findings 3 and I1 both bear on the question indirectly, and both point **away** from FERA being load-bearing for the other pillars: exchange allocation was decided by a Finance-chaired inter-departmental committee with the RBI as one voice among several (Finding 3), and the control machinery predates FERA by seven years (I1).
-- **Target 2.1** (Pakistan's 1952 Act verified against the amending Act itself): **partially served — see Finding 8.** A Pakistan-side consolidated text now corroborates the omission and supplies the exact citation (Act 1 of 1952, s.2), but the amending Act's own text is still unread and the two consolidations are not fully independent.
-- **Target 2.2** (independent corroboration of the 1957 US Treasury argument beyond Balachandran): not attempted.
-- **Target 2.3** (Bhupesh Gupta, Rajya Sabha, 6 September 1957): not attempted this run. Prior passes in this project have exhausted both `rsdebate.nic.in` bitstreams (now 404) and the `elibrary.sansad.in` DSpace API (zero 1957 FERA hits under every scope tried). Logged as outstanding, browser-only.
+- **Target 2.1** (Pakistan's 1952 Act verified against the amending Act itself): **partially served — see Finding 8** — and a further attempt this run to locate the amending Act's own text returned **zero results** (targeted search on the Act's title, number and operative section). The Pakistan Code does not appear to expose pre-1958 amending Acts in any web-reachable form. Still rests on two non-independent consolidated texts. **Recommend a library or Pakistan Code request; this is unlikely to yield to further web search.**
+- **Target 2.2** (independent corroboration of the 1957 US Treasury argument beyond Balachandran): **attempted — NEGATIVE, see Finding 11.** FRUS Vol. VIII's India chapter (Docs 143–184) contains no Treasury argument about IMF subscription composition. The claim still rests on Balachandran alone and must not be presented as corroborated. Untried and more promising: **NAC (National Advisory Council on International Monetary and Financial Problems) records**, which FRUS does not reproduce.
+- **Target 2.3** (Bhupesh Gupta, Rajya Sabha, 6 September 1957): **advanced — see Finding 12.** The sitting is now confirmed to exist at the cited URL, confirmed to contain the FERA debate, confirmed to include a Bhupesh Gupta speech, and one line is recovered verbatim through a search index. The document itself remains unfetchable, and **Wayback's emptiness is now verified by API response rather than assumed**. Browser-only.
 - **Target 2.4** (five browser-only downloads): unchanged; still browser-only. See `REMAINING_DOCUMENTS_EXACT_LINKS.md`.
