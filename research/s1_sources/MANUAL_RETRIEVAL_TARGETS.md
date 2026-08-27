@@ -1,158 +1,136 @@
 # Manual retrieval list — what I need from you, with exact links
 
-Everything below defeated automated retrieval for a **specific, diagnosed reason** (stated in each
-entry, so you know it's not worth me retrying blind). Ranked by what it would actually do for the
-essay. If you can get any of these to markdown — browser download, then any PDF→MD converter, or
-just copy-paste the text — hand it back and I'll analyse it.
+Everything below defeated automated retrieval for a **specific, diagnosed reason**. Ranked by what
+it would actually do for the essay. Format that works best: plain text or markdown; if it's a scan,
+flag OCR (Internet Archive OCR drops leading digits — "1949"→"949", "£1,169m"→"£169m" — prose is
+reliable, numerals need checking).
 
-**Format that works best for me:** plain text or markdown. If it's a scan, OCR is fine but flag it,
-because IA-style OCR drops leading digits (this project has already been bitten twice: "1949"→"949",
-"£1,169m"→"£169m"). Prose survives OCR; **numerals must be verified against the printed page.**
+**Two of the four "gaps" you asked about turned out to already be done** — see the top section
+before reading the rest.
 
 ---
 
-## TIER A — would change what the essay can claim
+## Already complete — no need to chase these
 
-### A1. Rajya Sabha, 6 September 1957 — the FERA debate (Bhupesh Gupta)
-**This is the single largest gap in the whole project's primary record.**
+### The Lok Sabha, 31 August 1957, full sitting
+**Done, full text, 4,647 lines:** `primary_docs/LokSabha_1957-08-31_FERA_Amendment_Bill_debate.md`
+Retrieved via the Internet Archive mirror of the eParlib scan (`eparlib.sansad.in` itself 403s at
+this session's egress gateway; the IA copy at `archive.org/details/eparlib.nic.in.1807` does not).
+Keyword counts across the whole sitting: sterling 12 · Britain 0 · British 5 · London 29. Pandit
+Thakur Das Bhargava's floor protest that the Bill was "rushed through" is in there too.
 
+### The 26 July 1957 Gazette SOR
+**Done, full text:** `primary_docs/GAZETTE_1957-07-26_FERA_Amendment_Bill_47_of_1957_SOR_FULLTEXT.md`
+This is the complete Bill No. 47 of 1957 as gazetted — every clause, plus the Statement of Objects
+and Reasons signed by T. T. Krishnamachari (13 July 1957), the Financial Memorandum, and the
+Memorandum Regarding Delegated Legislation. The SOR's stated reasons: continued foreign exchange
+shortage with "no reason to visualise" an end, and "the development programme under the Second Five
+Year Plan." No Britain, no sterling — consistent with everything else found in the project.
+
+### Speaker political context
+**New this pass:** `primary_docs/RS_1957-09-06_speakers_political_context.md` — bios for Bhupesh
+Gupta (CPI, West Bengal, ex-Anushilan Samiti underground, RS 1952–81), B. R. Bhagat (Congress,
+Deputy Finance Minister 1956–63 — TTK's own deputy for the whole permanence period), P. D.
+Himatsingka (Congress, Bihar; possible but unconfirmed Marwari business-family link), and Kishen
+Chand (likely PSP, Hyderabad — this one flagged as the least certain identification).
+
+---
+
+## TIER A — genuinely still open
+
+### A1. T. T. Krishnamachari, other 1957 statements
+**Live lead, not yet fetched (Firecrawl ran out of credits mid-session):**
 ```
-https://rsdebate.nic.in/bitstream/123456789/572037/2/ID_18_06091957_17_p3928_p3954_5.pdf
+https://nehruarchive.in/people/t-t-krishnamachari/page/3
 ```
-Rajya Sabha Vol. 18, 6 Sept 1957, pp. 3928–3954.
+Search-result snippet shows: *"Speech Statement to the Press. Minister for Finance, 1956-58,
+Devaluation of the Rupee — Friends and Comrades, I am addressing you tonight..."* — this is a press
+statement, not the IMF speech already in the project, and worth the full page. The Nehru Memorial
+archive site indexes TTK's speeches by page; page 3 is where this one surfaced, but paging through
+neighbouring pages (`/page/1`, `/page/2`, `/page/4`...) on the same URL pattern would likely surface
+more 1957 material.
 
-**Why automation fails:** all Firecrawl engines fail on the host; **Wayback has never crawled it** —
-verified this run by API, `{"archived_snapshots": {}}`, not merely assumed; `elibrary.sansad.in`'s
-DSpace API returns zero 1957 FERA hits under every collection scope tried. It *is* indexed by search
-engines, so the URL is live — it should simply open in a browser.
+Also worth a look, already known to exist from earlier searches: TTK's other Budget-adjacent
+speeches are on `indiabudget.gov.in/doc/bspeech/` — the 1957-58 final Budget (15 May 1957) is
+already in the project (`BudgetSpeech_1957-58_TTK_OFFICIAL_TEXT.md`); the Interim Budget (19 March
+1957) is also in (`BudgetSpeech_1957-58_INTERIM_TTK_19March1957.md`). What's *not* in the project is
+anything **between** those and the September IMF statement — i.e., anything from June–August 1957,
+which is exactly the runup to permanence.
 
-**Why it matters:** every other 1956–57 government document checked (seven now) gives non-British
-reasons for exchange control. The upper house had longer speeches and more sceptical members, and
-Bhupesh Gupta (CPI) is on record elsewhere calling the sterling balances a "forced accumulation" by
-the British. **If a Britain/sterling justification for permanence survives anywhere, it is here.**
-This is the decisive test of the essay's original thesis.
-
-I recovered exactly one line through a search index — *"The Foreign Exchange Regulation Act, 1947,
-is a temporary Act due to expire on the 31st December, 1957."* — which confirms the sitting is the
-right one and that Gupta spoke, but establishes nothing about his argument.
-
-**Also worth grabbing while you're on the site** (same session, adjacent sittings):
+### A2. IMF AREAER 1958 (Ninth) and 1959 (Tenth) — India chapters
 ```
-https://rsdebate.nic.in/bitstream/123456789/572013/2/ID_18_02091957_13_p2850_p2953_5.pdf   (2 Sept 1957)
+1958 (Ninth):  https://www.elibrary.imf.org/downloadpdf/display/book/9781475549317/9781475549317.pdf
 ```
+20.7 MB, ISBN **9781475549317**. **Ceiling measured precisely this pass: 100 pages succeeds, 150
+pages times out.** India's chapter is at printed p. 164 ≈ PDF p. 180 — **out of reach regardless of
+`maxPages` value**, same wall as 1955/1956.
 
-### A2. IMF AREAER 1955 and 1956 — India chapters
+**1959 (Tenth) ISBN not yet located** — ran out of search budget. Find it at
+`https://www.elibrary.imf.org/subject/012` (browse the AREAER series list) and apply the same URL
+pattern once you have it.
+
+**What I need from either:** whether/when the basic travel allowance was restored after its 1 Jan
+1957 abolition, and how the Fund described India's position after FERA permanence (31 Aug) and the
+RBI Ordinance (31 Oct). No source in the project currently covers this period.
+
+### A3. IMF AREAER 1955 and 1956 (1956 partial only) — unchanged from before
 ```
 1955 (Sixth):  https://www.elibrary.imf.org/downloadpdf/display/book/9781475548662/9781475548662.pdf
 ```
-391 pp., 33.5 MB, ISBN 9781475548662. The 1956 (Seventh) edition is 371 pp.; find its ISBN at
-`https://www.elibrary.imf.org/subject/012` and use the same URL pattern.
-
-**Why automation fails — diagnosed precisely this run:** the whole file must download before any
-page parses, and 33.5 MB does not complete inside the tool's hard 60-second timeout. **A 12-page
-parse timed out exactly like a 183-page one.** No `maxPages` setting can ever work. The eLibrary
-record also states "This publication is available in PDF format only" — there is no chapter-XML
-shortcut like the one that worked for the 1957 Summary Proceedings.
-
-**Free, no login, one click in a browser.** India's chapter should sit near printed **pp. 160–175**
-(the 1957 edition put India at pp. 164–170).
-
-**What I need from it — two specific things:**
-1. **The pre-abolition basic travel allowance figure.** I have the abolition (nil, from 1 Jan 1957);
-   I don't have what it was *before*. That figure would complete the BTQ chain in
-   `BTQ_and_the_reserve_constraint.md` and give the essay a real number for the ordinary traveller.
-2. **Whether 1955/56 show a more optimistic picture** than 1957 — Target 1.1, the "relaxation
-   premise." Right now the essay assumes 1955–58 showed genuine easing; this would document it.
-
-### A3. IMF AREAER 1958 (Ninth) and 1959 (Tenth) — India chapters
-Same pattern; ISBNs findable at `https://www.elibrary.imf.org/subject/012`.
-**What I need:** when the basic travel allowance was **restored** after 1 Jan 1957, and how the Fund
-described India's position *after* FERA permanence and the RBI Ordinance. No source in the project
-currently covers the aftermath.
+391 pp./33.5 MB — fails even at 12 pages, no `maxPages` value will work.
+```
+1956 (Seventh): https://www.elibrary.imf.org/downloadpdf/display/book/9781475549188/9781475549188.pdf
+```
+384 pp./16.4 MB — I got pp. 1–120 (Afghanistan through Egypt, including the Ceylon/Australia/Burma
+comparators already extracted into `IMF_AREAER_1956_sterling_area_comparators_Australia_Burma_Ceylon.md`).
+India (printed p.162 ≈ PDF p.177) is just past the measured ceiling (120 succeeds / 150 fails).
 
 ---
 
 ## TIER B — would close open evidential gaps
 
-### B1. Pakistan Act 1 of 1952 — the amending Act's own text
-The Foreign Exchange Regulation (Amendment) Act, **1 of 1952**, **section 2** — the provision that
-omitted Pakistan's sunset clause.
+### B1. Pakistan Act 1 of 1952, section 2 — the amending Act's own text
+**New lead this pass, not yet fetched:**
+```
+https://pakistancode.gov.pk/english/UY2FqaJw1-apaUY2Fqa-apaUY2Npaplm-sg-jjjjjjjjjjjjj
+```
+This is the Pakistan Code's own page for "Foreign Exchange Regulation Act, 1947" — it should list
+the full amendment history including the 1952 Act, and may link to the amending Act's own text or
+at least give a proper citation to chase further. The site's own year-browse tool is here if that
+page doesn't pan out: `https://pakistancode.gov.pk/english/LGu0xBD?year` (filter to 1952).
 
-**Why automation fails:** targeted searches on the Act's title, number and operative section return
-**zero results**. The Pakistan Code does not appear to expose pre-1958 amending Acts in any
-web-reachable form. This will not yield to more searching.
-
-**Where to try:** `pakistancode.gov.pk` (blocked to me, may work for you); a Pakistani law library;
-or the *Gazette of Pakistan* 1952. **What I have** is two consolidated texts with editorial
-footnotes — and they are *not* independent, since Bangladesh inherited Pakistan's statute book. The
-Pakistan comparative is one of Classic's strongest pieces and currently rests on a footnote.
+Still what I don't have: the actual text of **Act 1 of 1952, section 2** itself. Everything held so
+far is a consolidated/footnoted text (Pakistan and Bangladesh both), not the amending Act.
 
 ### B2. NAC records — the 1957 US Treasury argument on IMF drawing rights
-**National Advisory Council on International Monetary and Financial Problems**, 1957.
+No web link — an archival pointer, not a URL. Two concrete leads:
+- **"The Economic Problem of India"** report, Interdepartmental Working Group on India
+  (State/Treasury/ICA), completed 2 May 1957: **Washington National Records Center, ICA Director's
+  File: FRC 61 A 32**.
+- **NAC** (National Advisory Council on International Monetary and Financial Problems), chaired by
+  George M. Humphrey, 1957.
 
-**Why automation fails:** FRUS doesn't reproduce NAC minutes. I searched FRUS Vol. VIII's complete
-India chapter (Docs 143–184, read 165/166/167) — **no Treasury argument about the
-gold-vs-sterling-vs-dollar subscription split exists there.** Treasury's recorded position in FRUS
-is about aid appropriations only.
+FRUS Vol. VIII's India chapter (Docs 143–184, fully read) contains no Treasury argument about IMF
+subscription composition — this claim still rests on Balachandran alone.
 
-**Two concrete leads I turned up:**
-- **"The Economic Problem of India"** — report of the Interdepartmental Working Group on India
-  (State/Treasury/ICA), completed **2 May 1957**, at the Washington National Records Center,
-  **ICA Director's File: FRC 61 A 32**.
-- NAC itself — Doc 149's editorial note records that an identical letter went to **George M.
-  Humphrey, Chairman, NAC on International Monetary and Financial Problems**.
-
-**Why it matters:** this claim currently rests on **Balachandran alone**, and I could not corroborate
-it. Until it is, the essay must not present it as independently sourced.
-
-### B3. Panagariya, *India: The Emerging Giant* (2008) — the pillars question
-**Why automation fails:** not available in full text anywhere reachable (ResearchGate and Scribd
-listings only, no readable body text).
-
-**What I need:** the passages on **how the different control mechanisms interacted** — industrial
-licensing, import licensing, exchange control, Controller of Capital Issues — not each in isolation.
-This is Target 1.4: whether any scholar ranks FERA as functionally load-bearing for the other
-pillars. Two findings already point *away* from that (exchange allocation was decided by a
-Finance-chaired interdepartmental committee with the RBI as one voice among several; and the control
-machinery predates FERA by seven years), so if Panagariya agrees, the essay should scale the
-"chief enabler" claim down explicitly rather than quietly.
-
-**Chapter to target:** the early-chapters treatment of the 1950s–60s control regime, roughly
-pp. 444–51 per a citation I found.
+### B3. Panagariya, *India: The Emerging Giant* (2008), pp. ~444–51
+Unchanged — not available in full text through any route tried (ResearchGate/Scribd listings only).
+Needs library access. Target: how the different Licence-Raj control mechanisms (industrial
+licensing, import licensing, exchange control, Controller of Capital Issues) interacted with each
+other — Target 1.4, whether any scholar ranks FERA as load-bearing for the others.
 
 ---
 
-## TIER C — your own local files, which I genuinely cannot see
+## TIER C — your own local files, unchanged
 
-The T2 brief referenced these as already in the project. **They are on your Mac, not in this repo** —
-I have no access to that folder, so I worked around them. If you paste them in, they'd let me
-verify rather than infer:
+Still on your Mac, not in this repo:
 
 | File | What I'd use it for |
 |---|---|
-| `S1_Evidence_Comb_Findings.md` | the exact format/numbering to match, and what Locks A/B already say verbatim |
-| `c1019.md` (Bhagwati, *Foreign Trade Regimes*) | Target 0.2 capital-goods licensing procedure; and the exact dating of the non-convertibility rationale becoming "inoperative in the 1950s" (Target 1.1) |
-| Balachandran, RBI history vol. (1951–67) | the original double-gate passage that prompted the T2 brief; plus BTQ-era material my Vol. 1 doesn't reach |
+| `S1_Evidence_Comb_Findings.md` | exact format/numbering to match; what Locks A/B already say verbatim |
+| `c1019.md` (Bhagwati, *Foreign Trade Regimes*) | capital-goods licensing procedure; dating of the "inoperative in the 1950s" non-convertibility rationale |
+| Balachandran, RBI history vol. (1951–67) | the original double-gate passage; BTQ-era material Vol. 1 doesn't reach |
 | Kamtekar | the five-pillars framing, to check I'm not misstating it |
 
-**Note on the RBI history volume number** — flagged in your own session notes as a citation trap and
-still unresolved: the 1951–67 volume presents itself as **Volume 2**, but your working guide calls it
-Volume 3. Settle this before citing. What I retrieved this run is unambiguously **Volume 1** (the
-founding-to-1951 volume, 915 pp.).
-
----
-
-## What I do NOT need
-
-So you don't waste effort — these are done and in the repo:
-
-- RBI *Exchange Control Manual* Ch. 7 (the primary regulatory text) — **retrieved in full**
-- RBI official history **Vol. 1** Ch. 20 — **retrieved in full**
-- IMF AREAER **1957** India chapter — retrieved (earlier pass)
-- GATT L/648/Add.1 and **L/719** — retrieved in full
-- Deshmukh's 14 Feb 1952 FERA debate — retrieved in full
-- TTK's Sept 1957 IMF Annual Meeting statement — retrieved in full
-- Pakistan FERA *consolidated* text — retrieved (it's the *amending Act* I still need, B1)
-- FRUS Vol. VIII Docs 165, 166, 167 — retrieved
-- All four Budget speeches 1948–57, the 1948/1949 Constituent Assembly sterling debates, both 1957
-  Lok Sabha FERA sittings, the FERA Bill SOR, RBI Ordinance 6 of 1957, Ordinance X of 1951
+Volume-number trap, still unresolved: your notes call the 1951–67 volume "Volume 3," it presents
+itself as "Volume 2." What I hold is unambiguously **Volume 1** (founding-to-1951, 915pp).
